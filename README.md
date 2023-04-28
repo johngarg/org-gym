@@ -1,27 +1,43 @@
 # org-gym
 
-[![PyPI](https://img.shields.io/pypi/v/org-gym.svg)](https://pypi.org/project/org-gym/)
-[![Changelog](https://img.shields.io/github/v/release/johngarg/org-gym?include_prereleases&label=changelog)](https://github.com/johngarg/org-gym/releases)
-[![Tests](https://github.com/johngarg/org-gym/workflows/Test/badge.svg)](https://github.com/johngarg/org-gym/actions?query=workflow%3ATest)
 [![License](https://img.shields.io/badge/license-Apache%202.0-blue.svg)](https://github.com/johngarg/org-gym/blob/master/LICENSE)
 
-A tool for working with fitness data in orgmode.
+A tool for working with fitness data in emacs' org-mode.
 
 ## Installation
 
 Install this tool using `pip`:
 
-    pip install org-gym
+    pip install .
 
 ## Usage
 
 For help, run:
 
     org-gym --help
+    
+The main command now is `parse`, e.g.
 
-You can also use:
+    org-gym parse ~/workouts.org
 
-    python -m org_gym --help
+### Data files
+
+The data files roughly follow the setup of [this similar project](https://github.com/guancio/org-fit). Workouts are primary headings, with exercises as secondary TODO headings and each set is an element in an unordered list:
+
+``` org
+* Push workout
+:PROPERTIES:
+:date: 2023-01-01
+:END:
+** TODO Bench press
+:PROPERTIES:
+:muscle: chest
+:note: pain in left shoulder
+:END:
+- 50 kg x 10
+- 60 kg x 8
+- 65 kg x 7
+```
 
 ## Development
 
