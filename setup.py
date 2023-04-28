@@ -14,7 +14,7 @@ def get_long_description():
 
 setup(
     name="org-gym",
-    description="A tool for working with fitness data in orgmode.",
+    description="A tool for working with fitness data in emacs' org-mode.",
     long_description=get_long_description(),
     long_description_content_type="text/markdown",
     author="John Gargalionis",

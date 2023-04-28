@@ -22,7 +22,7 @@ The main command now is `parse`, e.g.
 
 ### Data files
 
-The data files roughly follow the setup of [this similar project](https://github.com/guancio/org-fit). Workouts are primary headings, with exercises as secondary TODO headings and each set is an element in an unordered list:
+The data files roughly follow the setup of [this similar project](https://github.com/guancio/org-fit). Workouts are primary headings with exercises as secondary TODO headings and each set is an element in an unordered list:
 
 ``` org
 * Push workout
